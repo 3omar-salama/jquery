@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <ul class="navbar">
+      <li><a href="#" data-scroll="home">Home</a></li>
+      <li><a href="#" data-scroll="about-us">About Us</a></li>
+      <li><a href="#" data-scroll="services">Services</a></li>
+      <li><a href="#" data-scroll="solutions">Solutions</a></li>
+      <li><a href="#" data-scroll="products">Products</a></li>
+      <li><a href="#" data-scroll="contact-us">Contact Us</a></li>
+    </ul>
+    <!-- End Navbar -->
+    <!-- Start Fixed Menu -->
+    <div class="fixed-menu">
+      <i class="fa fa-gear"></i>
+      <h3>Change Color</h3>
+      <ul class="change-colors">
+        <li data-color="blue"></li>
+        <li data-color="red"></li>
+        <li data-color="green"></li>
+        <li data-color="purple"></li>
+      </ul>
+      <h3>Important links</h3>
+      Testing Lenks
+    </div>
+    <!-- End Fixed Menu -->
+    <!-- Start Sections -->
+    <div id="home" class="block">
+      <h2>Home</h2>
+      <!-- Start Popups -->
+      <div class="popups">
+        <span class="show-popup" data-popup=".first-popup">Show 1st Popup</span>
+        <span class="show-popup" data-popup=".second-popup"
+          >Show 2nd Popup</span
+        >
+      </div>
+      <!-- End Popups -->
+      <!-- Start Buttons With  Effects -->
+      <div class="buttons-effects">
+        <button class="buttons-effect from-left">
+          <span>From Left</span>
+        </button>
+        <button class="buttons-effect from-top">
+          <span>From Top</span>
+        </button>
+        <button class="buttons-effect border-left">
+          <span>Border From Left</span>
+        </button>
+        <button class="buttons-effect border-top">
+          <span>Border From Top</span>
+        </button>
+      </div>
+      <!-- End Buttons With Effects -->
+
+      <!-- Start Brgress Bar -->
+      <div class="animated-progress progress-blue">
+        <span data-progress="45"></span>
+      </div>
+      <div class="animated-progress progress-red">
+        <span data-progress="25"></span>
+      </div>
+      <div class="animated-progress progress-green">
+        <span data-progress="60"></span>
+      </div>
+      <div class="animated-progress progress-purple">
+        <span data-progress="80"></span>
+      </div>
+      <!-- End Brogress Bar -->
+      <!-- Start Gallery -->
+      <div class="gallery">
+        <div class="master-img">
+          <i class="skin-background fa fa-chevron-left fa-lg"></i>
+          <i class="skin-background fa fa-chevron-right fa-lg"></i>
+          <img src="./img/1.png" alt="master image" />
+        </div>
+        <div class="thumbnails">
+          <img class="selected" src="./img/1.png" alt="thumbnail 1" />
+          <img src="./img/2.png" alt="thumbnail 2" />
+          <img src="./img/3.png" alt="thumbnail 3" />
+          <img src="./img/4.png" alt="thumbnail 4" />
+          <img src="./img/5.png" alt="thumbnail 5" />
+          <img src="./img/6.png" alt="thumbnail 6" />
+          <img src="./img/7.png" alt="thumbnail 7" />
+        </div>
+      </div>
+
+      <!-- End Gallery -->
+    </div>
+    <div id="about-us" class="block">
+      <h2>About Us</h2>
+    </div>
+    <div id="services" class="block">
+      <h2>Services</h2>
+    </div>
+    <div id="solutions" class="block">
+      <h2>Solutions</h2>
+    </div>
+    <div id="products" class="block">
+      <h2>Products</h2>
+    </div>
+    <div id="contact-us" class="block">
+      <h2>Contact Us</h2>
+    </div>
+
+    <!-- Start ScrollToTop -->
+    <a class="scroll-to-top" href="#">
+      <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+    </a>
+    <!-- End ScrollToTop -->
+
+    <!-- Start Popup -->
+    <div class="popup first-popup">
+      <div class="inner">
+        <h2>This is Our 1st Popup</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit modi
+          iure rerum veniam ipsam magnam delectus? Tempora optio placeat harum
+          eaque dolores. Optio aspernatur natus amet blanditiis at facere id.
+        </p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+    <div class="popup second-popup">
+      <div class="inner">
+        <h2>This is Our 2nd Popup</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit modi
+          iure rerum veniam ipsam magnam delectus? Tempora optio placeat harum
+          eaque dolores. Optio aspernatur natus amet blanditiis at facere id.
+        </p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+    <!-- End Popup -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

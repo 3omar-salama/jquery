@@ -1,0 +1,378 @@
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* End Global Rules */
+
+body {
+  font-family: Tahoma, Arial;
+  /* padding-top: 59px; */
+}
+
+.scroll-to-top {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  position: fixed;
+  padding: 0px 5px 3px;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+/* Start Header */
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* End Header */
+
+/* Start Fixed Menu */
+.fixed-menu {
+  background-color: #333;
+  color: #eee;
+  padding: 10px;
+  position: fixed;
+  left: -220px;
+  top: 0;
+  height: 100%;
+  width: 220px;
+  z-index: 9999;
+}
+
+.fixed-menu .fa-gear {
+  position: absolute;
+  right: -30px;
+  top: 90px;
+  background-color: #333;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.fixed-menu .change-colors li {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* End Fixed Menu */
+
+/* Start Section */
+.block {
+  min-height: 1200px;
+  background-color: #eee;
+  margin-bottom: 20px;
+  padding: 60px 0;
+}
+
+.block h2 {
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.navbar li a.active {
+  color: #ffea00;
+}
+
+/* Start Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(187, 187, 187, 0.8);
+  display: none;
+}
+
+.popup .inner {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  height: 250px;
+  left: 50%;
+  position: fixed;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -125px;
+  border-radius: 5px;
+}
+
+.popup .inner h2 {
+  margin: 0 0 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.popup .inner p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.popup .inner button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 2px 8px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.show-popup {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  margin: 20px;
+  background-color: #fff;
+  width: 140px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #928440;
+}
+
+/* End Popup */
+
+/* Start Buttons With  Effects */
+.buttons-effect {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 160px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons-effect span:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  z-index: 1;
+}
+
+.buttons-effect span:last-child {
+  position: relative;
+  z-index: 2;
+}
+
+.buttons-effect.from-left {
+  background-color: #c0392b;
+}
+
+.buttons-effect.from-left span:first-child {
+  background-color: #e74c3c;
+  width: 0;
+  height: 100%;
+}
+
+.buttons-effect.from-top {
+  background-color: #2980b9;
+}
+
+.buttons-effect.from-top span:first-child {
+  background-color: #3498db;
+  width: 100%;
+  height: 0;
+}
+
+.border-left,
+.border-top {
+  border-radius: 0;
+  background-color: #fff;
+  color: #2980b9;
+  overflow: visible;
+}
+
+.border-left span:first-child {
+  background-color: #2980b9;
+  width: 0;
+  height: 3px;
+  top: auto;
+  bottom: -3px;
+}
+
+.border-top span:first-child {
+  background-color: #2980b9;
+  width: 3px;
+  height: 0;
+  left: -3px;
+}
+
+/* End Buttons With Evects */
+
+/* Start brgress Bar */
+.animated-progress {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px 10px;
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+
+.animated-progress span {
+  height: 100%;
+  width: 0;
+  display: block;
+  color: #fff;
+  line-height: 30px;
+  text-indent: 8px;
+}
+
+.progress-blue span {
+  background-color: #3498db;
+}
+
+.progress-red span {
+  background-color: #e74c3c;
+}
+
+.progress-green span {
+  background-color: #16a085;
+}
+
+.progress-purple span {
+  background-color: #8e44ad;
+}
+/* End Brogress Bar */
+
+/* Start Gallery */
+.gallery {
+  width: 800px;
+  margin: auto;
+  border: 1px solid #ccc;
+  padding: 3px;
+  background-color: #fff;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+.gallery .master-img {
+  position: relative;
+}
+
+.gallery .master-img i {
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+  color: #000;
+}
+
+.gallery .master-img .fa-chevron-left {
+  left: 0;
+}
+
+.gallery .master-img .fa-chevron-right {
+  right: 0;
+}
+
+.gallery .thumbnails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery .thumbnails img {
+  border: 3px solid #bbb;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  opacity: 0.4;
+  flex-grow: 1;
+  margin-right: 0.5%;
+}
+
+.gallery .thumbnails img:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+.gallery .thumbnails img.selected {
+  border: 3px solid #ad1f10;
+  opacity: 1;
+}
+
+/* End Gallery */
+
+/* Start Website Theme Colors */
+[data-default-color="blue"] .skin-color {
+  color: #3498db;
+}
+
+[data-default-color="blue"] .skin-background {
+  background-color: #3498db;
+  color: #fff;
+}
+
+[data-default-color="red"] .skin-color {
+  color: #e74c3c;
+}
+
+[data-default-color="rerd"] .skin-background {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+[data-default-color="green"] .skin-color {
+  color: #16a085;
+}
+
+[data-default-color="green"] .skin-background {
+  background-color: #16a085;
+  color: #fff;
+}
+
+[data-default-color="purple"] .skin-color {
+  color: #8e44ad;
+}
+
+[data-default-color="purple"] .skin-background {
+  background-color: #8e44ad;
+  color: #fff;
+}
+/* End Website Theme Colors */
